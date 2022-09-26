@@ -1,6 +1,6 @@
 const { db } = require("../service/db");
 const { RESPONSE_CODE } = require("../constant");
-const { getAllStudentByClassId } = require("../service/student");
+// const { getAllStudentByClassId } = require("../service/student");
 const { getAllClass, createClass } = require("../service/class");
 
 const getAllClassController = async (req, res) => {
@@ -91,7 +91,7 @@ const getAllStudentClassController = async (req, res) => {
       message: "@classID can not be empty",
     });
   }
-  const listClass = await getAllStudentByClassId(classID);
+  // const listClass = await getAllStudentByClassId(classID);
 
   res.send({
     code: RESPONSE_CODE.SUCCESS,
